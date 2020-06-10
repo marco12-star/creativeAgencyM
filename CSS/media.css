@@ -1,0 +1,156 @@
+@media all and (max-width: 1440px){
+	.team__content {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.team__member{
+		width: 40vw;
+	}
+}
+
+@media all and (max-width: 1040px){
+	.header {
+		background: url(../IMG/1.png) 50% 100%/cover fixed;
+	}
+	.header__contact{
+		display: none;
+	}
+	.menud__nav a {
+		font-size: 23px;
+	}
+	.offers__cards{
+		flex-wrap: wrap;
+	}
+	.card{
+		width: 34vw;
+		margin-bottom: 2em;
+		justify-content: center;
+	}
+	.difference__item_text {
+		font-size: 25px;
+	}
+	.contact {
+		background: url(../IMG/contact.png) 50% 50%/cover;
+	}
+}
+
+@media all and (max-width: 960px){
+	.difference__items{
+		padding: 0;
+		flex-direction: column;
+	}
+	.difference__item {
+		margin: 1em auto;
+	}
+}
+
+@media all and (max-width: 960px){
+	.plans__cards{
+		flex-wrap: wrap;
+	}
+	.plans__card{
+		width: 27vw;
+		margin-bottom: 1em;
+	}
+	.contact__content {
+		flex-direction: column-reverse;
+	}
+	.contact__info{
+		margin: 0 auto;
+	}
+}
+@media all and (max-width: 800px){
+	.menu{
+		display: flex;
+	}
+	.menud{
+		display: none;
+	}
+	.header__contact{
+		display: flex;
+	}
+}
+@media all and (max-width: 740px){
+	.offers__cards{
+		flex-direction: column;
+	}
+	.card{
+		margin: 2em auto;
+	}
+}
+@media all and (max-width: 680px){
+	.benefits__inner {
+		margin-bottom: 2em;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.benefits__element {
+		width: 34%;
+	}
+	.team__content {
+		flex-direction: column;
+	}
+	.team__member {
+		width: unset;
+		margin: 0 auto;
+	}
+	.member__info{
+		margin: 1em;
+	}
+	.plans__cards {
+		flex-direction: column;
+	}
+	.plans__card{
+		width: unset;
+		margin: 1em 8em;
+	}
+	.user{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 480px){
+	.difference__item {
+		width: unset;
+		margin: 1em 2em;
+	}
+	.plans__card{
+		width: unset;
+		margin: 1em 3em;
+	}
+	.difference__item_title{
+		line-height: 1.4;
+	}
+}
+
+@media all and (max-width: 384px){
+	.form .messagge {
+		padding: 0;
+		border: none;
+		border-bottom: 2px solid #ccc;
+	}
+	.menu__group{
+		--rLinkTextColor: var(--colorWhite);
+		padding: .5rem 3rem; 
+		font-size: 2.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.difference{
+		color: #fff;
+	}
+	.difference__item {
+		padding: 0;
+		margin: 1em .5em;
+		background: none;
+	}
+	.offer__btn1, .offer__btn2, .offer__btn3{
+		display: none;
+	}
+	.offer__btn4{
+		display: inline;
+	}
+
+}
