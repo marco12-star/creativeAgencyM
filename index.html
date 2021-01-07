@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="CSS/reset.css">
 	<link rel="shortcut icon" type="image/png" href="IMG/robo.png"/>
 	<link rel="stylesheet" href="CSS/media.css">
-	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -151,7 +152,6 @@
 				</div>
 				<div class="offers__cards flex">
 					<div class="card flex">
-						<button class="offer__btn1"><i class="fas fa-arrow-right"></i></button>
 						<div class="offer__card offer__hover1">
 								<i class="fas fa-desktop offer__icon"></i>
 								<h3 class="card__title">duyarlı & çok amaçlı</h3>
@@ -160,7 +160,6 @@
 						</div>
 					</div>
 					<div class="card flex">
-						<button class="offer__btn2"><i class="fas fa-arrow-right"></i></button>
 						<div class="offer__card offer__hover2">
 								<i class="fas fa-puzzle-piece offer__icon"></i>
 								<h3 class="card__title">kolay özelleştirme</h3>
@@ -169,7 +168,6 @@
 						</div>
 					</div>
 					<div class="card flex">
-						<button class="offer__btn3"><i class="fas fa-arrow-right"></i></button>
 						<div class="offer__card offer__hover3">
 								<i class="fas fa-users offer__icon"></i>
 								<h3 class="card__title">dost canlısı destek</h3>
@@ -198,7 +196,7 @@
 					<div class="benefits__inner flex">
 						<div class="benefits__element">
 							<i class="fas fa-users benefits__icon"></i>
-							<p class="benefits__number">10000</p>
+							<p class="benefits__number">15</p>
 							<p class="benefits__title">çalışanımız</p>
 						</div>
 						<div class="benefits__element">
@@ -208,7 +206,7 @@
 						</div>
 						<div class="benefits__element">
 							<i class="far fa-calendar-alt benefits__icon"></i>
-							<p class="benefits__number">15</p>
+							<p class="benefits__number">10</p>
 							<p class="benefits__title">sene bu sektörde</p>
 						</div>
 						<div class="benefits__element">
@@ -320,20 +318,7 @@
 
 	<!-- PLANS END -->
 
-	<!-- THANKS START -->
 
-	<div class="thanks flex">
-		<div class="container">
-			<div class="thanks__content">
-				<h3 class="thanks__title">thanks for visit</h3>
-				<p class="stay">stay in touch</p>
-				<div class="up"><a href="#y2"><i class="fas fa-arrow-up"></i>  up</a></div>
-				<p class="thanks__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptas, quas.</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- THANKS END -->
 
 	<div id="y8" class="contact flex">
 		<div class="container">
@@ -344,20 +329,20 @@
 						<i class="far fa-envelope contact__icon"></i>
 						<div class="contact__info">
 							<h4>email</h4>
-							<p><i><i>mehmet666@gmail.com</i></i></p>
+							<p><i><i>creative12@gmail.com</i></i></p>
 						</div>
 					</div>
 					<div class="contact__item flex">
 						<i class="fas fa-mobile-alt contact__icon"></i>
 						<div class="contact__info">
-							<h4>Numara</h4>
+							<h4>Telefon</h4>
 							<p><i>+905562859254</i></p>
 						</div>
 					</div>
 					<div class="contact__item flex">
 						<i class="fas fa-map-marker-alt contact__icon"></i>
 						<div class="contact__info">
-							<h4>Address</h4>
+							<h4>Adres</h4>
 							<p><i>İstanbul, Kadıköy</i></p>
 						</div>
 					</div>
@@ -368,13 +353,26 @@
 						<span class="user__info">isminiz<input placeholder="Ahmet" type="text"></span>
 						<span class="user__info">email<input placeholder="Erdoğan" type="text"></span>
 					</div>
-					<span class="user__info">mesaj<input class="messagge" placeholder="Abi klima çalışmıyor" type="text"></span>
+					<span class="user__info">mesaj<input class="messagge" placeholder="Nasıl sizin gibi olabilirim?" type="text"></span>
 					<button class="button">gönder</button>
 				</form>
 			</div>
 		</div>
 	</div>
+	<!-- THANKS START -->
 
+		<div class="thanks flex">
+			<div class="container">
+				<div class="thanks__content">
+					<h3 class="thanks__title">thanks for visit</h3>
+					<p class="stay">stay in touch</p>
+					<div class="up"><a href="#y2"><i class="fas fa-arrow-up"></i>  up</a></div>
+					<p class="thanks__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptas, quas.</p>
+				</div>
+			</div>
+		</div>
+
+	<!-- THANKS END -->
 	<!-- MAP START -->
 
 	<div class="map">
@@ -388,7 +386,8 @@
 	<footer class="footer flex">
 		<div class="container">
 			<div class="footer__content flex">
-				<p>MEHMET REIIISSSS</p>
+				<span>
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.instagram.com/anvar_musa/" target="_blank">Anvar Musa</a>
 			</div>
 		</div>
 	</footer>
@@ -423,6 +422,19 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+function addClass() {
+  	var id = $(this).attr('href');
+  	$("a").removeClass('active');
+        $("div").removeClass('active');
+  	$(this).addClass('active');
+  	$(id).addClass('active');
+}
+
+  var nodeList = document.querySelectorAll('a');
+
+  for( var i = 0; i < nodeList.length; i++) {
+    nodeList[i].addEventListener('click', addClass);
+  }
 </script>
 </body>
 </html>

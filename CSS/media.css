@@ -19,6 +19,7 @@
 	.menud__nav a {
 		font-size: 23px;
 	}
+
 	.offers__cards{
 		flex-wrap: wrap;
 	}
@@ -112,6 +113,9 @@
 }
 
 @media all and (max-width: 480px){
+	.hero {
+	    padding: 1em 0 1em 0;
+	}
 	.difference__item {
 		width: unset;
 		margin: 1em 2em;
@@ -120,8 +124,22 @@
 		width: unset;
 		margin: 1em 3em;
 	}
-	.difference__item_title{
-		line-height: 1.4;
+	.difference__item_title {
+	    font-size: 20px;
+	    line-height: 1.4;
+	    margin-left: -25px;
+	}
+	.card {
+		width: 90%;
+	}
+	.offers__title {
+		padding-bottom: 10px;
+	}
+	.offers__cards {
+	    padding: 0;
+	}
+	.form input {
+		margin: 0.5em 12px;
 	}
 }
 
